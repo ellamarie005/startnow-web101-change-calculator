@@ -1,0 +1,1 @@
+In this project, you will create a calculator, where you can iput the amount charge, the amount given, and the total change in dollars, quarters, dimes,  nickels, and pennies.

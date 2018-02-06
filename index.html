@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+  </head>
+  <body style="text-align: center">
+    <!-- Write your markup here -->
+    <style>
+      h1 {
+        color:red;
+      }
+      
+      .container {
+        display:table;
+        text-align: center;
+        margin: 0 auto;
+        }
+
+      .col1, .col2, .col3, .col4, .col5 {
+        display:table-cell;
+        padding: 10px;
+        border: solid;
+        }
+
+      p {
+        text-align: center;
+      }
+    </style>
+
+
+
+
+    <h1>Change Calculator</h1>
+    <input id="amount-due" placeholder="Amount Due">
+    <input id="amount-received" placeholder="Amount Received">
+    <button id="calculate-change" onclick="handleClickEvent()">Calculate</button>
+    <p id="total-change">Your Change Is...</p>
+    <div class="container">
+      <div class="col1">
+        <p>Dollars</p>
+        <p id="dollars-output"></p>
+      </div>
+      <div class="col2">
+          <p>Quarters</p>
+          <p id="quarters-output"></p>
+        </div>
+      <div class="col3">
+          <p>Dimes</p>
+          <p id="dimes-output"></p>
+        </div>
+      <div class="col4">
+        <p>Nickels</p>
+        <p id="nickels-output"></p>
+      </div>
+      <div class="col5">
+          <p>Pennies</p>
+          <p id="pennies-output"></p>
+        </div>
+    </div>
+    <!-- Don't forget to add your <script> tag here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="main.js"></script>
+  </body>
+</html>
